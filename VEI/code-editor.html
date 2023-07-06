@@ -1,0 +1,284 @@
+<html lang="en">
+
+<head>
+    <title>Code-Editor</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src-codigo-mirror/codemirror.css">
+    <link rel="stylesheet" href="src-codigo-mirror/show-hint.css">
+   
+    <link rel="stylesheet" href="src-codigo-mirror/index.css">
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" />
+     <!-- Google Fonts Roboto -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+     <!-- MDB -->
+     <link rel="stylesheet" href="css/mdb.min.css" />
+     <!-- Custom styles -->
+
+</head>
+
+<body>
+    <header>
+      <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Container wrapper -->
+    <div class="container">
+     <!-- Navbar brand -->
+     <a class="navbar-brand" href="#"><img id="MDB-logo"
+      src="img/curso-por-internet.png" alt="MDB Logo"
+      draggable="false" height="50px" /></a>
+  
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      
+        <form class="d-flex align-items-center w-100 form-search">
+          <div class="input-group">
+            <button class="btn btn-light dropdown-toggle shadow-0" type="button" data-mdb-toggle="dropdown"
+              aria-expanded="false" style="padding-bottom: 0.4rem;">
+              <span class="fa-li pe-2"><i class="fa-solid fa-filter"></i></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark fa-ul">
+              <li>
+                <a class="dropdown-item" href="#"><span class="fa-li pe-2"><i class="fas fa-search"></i></span>Todo</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"><span class="fa-li pe-2"><i class="fas fa-tv"></i></span>Cursos</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"><span class="fa-li pe-2"><i class="fa-solid fa-book"></i></span>Contenidos</a>
+              </li>
+            </ul>
+            <input type="search" class="form-control" placeholder="Búsqueda" aria-label="Search" />
+          </div>
+          <a href="#!" class="text-white"><i class="fas fa-search ps-3"></i></a>
+        </form>
+  
+        <ul class="navbar-nav ms-3">
+         
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center me-3" href="#!">
+              <i ></i>  </a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link d-flex align-items-center me-3" href="#!">
+              <i class="fa-solid fa-right-to-bracket" style="color: #ffffff;font-size: 24px"></i> </a>
+  
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+    </header>
+    <main>
+        <div id="intro" class="p-3 text-center bg-light">
+            <h1 class="mb-0 h4">Practica los ejercicios y ejecutalos de manera sencilla   </h1>
+          </div>
+        <div class="menu" >
+            
+            <a  id="run-btn" type="button" class="btn btn-success btn">Ejecutar</a>
+            <a href="javascript:autoFormatSelection()" type="button" class="btn btn-primary">Dar formato</a>
+            <a href="javascript:commentSelection(true)" type="button" class="btn btn-warning">Comentar</a>
+            <a href="javascript:commentSelection(false)" type="button" class="btn btn-info">Descometar</a>
+    </div>
+        <div class="editor">
+            <div id="resizeMe" class="code a">
+                <div class="html-code"></div>
+            </div>
+            <div class="code pa">
+                <iframe id="preview-window"></iframe>
+            </div>
+        </div>
+    </main>
+    
+    <footer
+    class="text-center text-lg-start text-white"
+    style="background-color: #1c2331"
+    >
+<!-- Section: Social media -->
+<section
+       class="d-flex justify-content-between p-4"
+       style="background-color: #1e1d26"
+       >
+<!-- Left -->
+<div class="me-5">
+  <!--<span>Comparte para que llegue a más personas:</span>-->
+</div>
+<!-- Left -->
+
+<!-- Right -->
+<div>
+  Haz que llegue a más personas&nbsp;&nbsp;&nbsp;
+  <a href="" class="text-white me-4">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="" class="text-white me-4">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="" class="text-white me-4">
+    <i class="fab fa-google"></i>
+  </a>
+  <a href="" class="text-white me-4">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="" class="text-white me-4">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="" class="text-white me-4">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+<!-- Right -->
+</section>
+<!-- Section: Social media -->
+
+<!-- Section: Links  -->
+<section class="">
+<div class="container text-center text-md-start mt-5">
+  <!-- Grid row -->
+  <div class="row mt-3">
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+      <!-- Content -->
+      <h6 class="text-uppercase fw-bold">AcTec</h6>
+      <hr
+          class="mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 60px; background-color: #7c4dff; height: 2px"
+          />
+      <p>
+        Acercándote a la tecnología. Haciendo que la educación llegue.
+      </p>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+      <!-- Links -->
+      <h6 class="text-uppercase fw-bold">Otros proyectos</h6>
+      <hr
+          class="mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 60px; background-color: #7c4dff; height: 2px"
+          />
+      <p>
+        <a href="#!" class="text-white">CodeSpace</a>
+      </p>
+      <p>
+        <a href="#!" class="text-white">ABCTec</a>
+      </p>
+      <p>
+        <a href="#!" class="text-white">BrandFlow</a>
+      </p>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+      <!-- Links -->
+      <h6 class="text-uppercase fw-bold">Enlaces útiles</h6>
+      <hr
+          class="mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 60px; background-color: #7c4dff; height: 2px"
+          />
+      <p>
+        <a href="#!" class="text-white">Perfil</a>
+      </p>
+      <p>
+        <a href="#!" class="text-white">Ayuda</a>
+      </p>
+      <p>
+        <a href="#!" class="text-white">Contribuir</a>
+      </p>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+      <!-- Links -->
+      <h6 class="text-uppercase fw-bold">Contacto</h6>
+      <hr
+          class="mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 60px; background-color: #7c4dff; height: 2px"
+          />
+      <p><i class="fas fa-home mr-4"></i> Buenos Aires, AR</p>
+      <p><i class="fas fa-envelope mr-4"></i>  artec@email.com</p>
+      <p><i class="fas fa-phone mr-4"></i>  4445 5594</p>
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+</div>
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div
+   class="text-center p-3"
+   style="background-color: rgba(0, 0, 0, 0.2)"
+   >
+© 2023 Copyright - AcTec
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+   
+</body>
+<!-- MDB -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Custom scripts -->
+<script type="text/javascript" src="js/script.js"></script>
+<script src="src-codigo-mirror/codemirror.js"></script>
+<script src="src-codigo-mirror/formatting.js"></script>
+<script src="src-codigo-mirror/show-hint.js"></script>
+<script src="src-codigo-mirror/xml-hint.js"></script>
+<script src="src-codigo-mirror/html-hint.js"></script>
+<script src="src-codigo-mirror/xml.js"></script>
+<script src="src-codigo-mirror/javascript.js"></script>
+<script src="src-codigo-mirror/css.js"></script>
+<script src="src-codigo-mirror/htmlmixed.js"></script>
+<script src="https://unpkg.com/split.js/dist/split.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+    Split(['.a', '.pa'])
+    var htmlEditor = CodeMirror(document.querySelector(".editor .code .html-code"), {
+        mode: "htmlmixed",
+        tabSize: 4,
+        lineNumbers: true,
+        extraKeys: { "Ctrl-Space": "autocomplete" }
+    });
+    CodeMirror.commands["selectAll"](htmlEditor);
+
+    function getSelectedRange() {
+        return { from: htmlEditor.getCursor(true), to: htmlEditor.getCursor(false) };
+    }
+
+    function autoFormatSelection() {
+        var range = getSelectedRange();
+        htmlEditor.autoFormatRange(range.from, range.to);
+    }
+
+    function commentSelection(isComment) {
+        var range = getSelectedRange(), selStart = htmlEditor.getCursor("start");
+        htmlEditor.commentRange(isComment, range.from, range.to);
+        htmlEditor.setSelection(selStart, htmlEditor.getCursor("end"));
+    }
+    document.querySelector("#run-btn").addEventListener("click", function () {
+        let htmlCode = htmlEditor.getValue();
+        let previewWindow = document.querySelector("#preview-window").contentWindow.document;
+        previewWindow.open();
+        previewWindow.write(htmlCode);
+        previewWindow.close();
+    });
+</script>
