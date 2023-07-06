@@ -1,7 +1,7 @@
 <html lang="es">
 
 <head>
-    <title>Code-Editor</title>
+    <title>AcTec - Editor de código</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
      <!-- MDB -->
      <link rel="stylesheet" href="css/mdb.min.css" />
      <!-- Custom styles -->
-
+     <link rel="stylesheet" href="css/TomandoCurso.css" />
       <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/isotipo.png">
 </head>
@@ -25,17 +25,17 @@
     <header>
       <div id="header"></div>
     </header>
-    <main>
-        <div id="intro" class="p-3 text-center bg-light">
-            <h1 class="mb-0 h4">Practica los ejercicios y ejecutalos de manera sencilla   </h1>
+    <main class="mb-5">
+        <div id="intro" class="p-3 text-center">
+            <h3 class="w-100 ">Editor de código en línea</h3>
+            <p>Practicá los ejercicios y ejecutalos de manera sencilla</p>
           </div>
-        <div class="menu" >
-            
-            <a  id="run-btn" type="button" class="btn btn-success btn">Ejecutar</a>
-            <a href="javascript:autoFormatSelection()" type="button" class="btn btn-primary">Dar formato</a>
-            <a href="javascript:commentSelection(true)" type="button" class="btn btn-warning">Comentar</a>
-            <a href="javascript:commentSelection(false)" type="button" class="btn btn-info">Descometar</a>
-    </div>
+        <p class="w-100 text-center contenedor-btns">
+            <a  id="run-btn" type="button" class="btn btn-success">Ejecutar</a>
+            <a href="javascript:autoFormatSelection()" type="button" class="btn">Dar formato</a>
+            <a href="javascript:commentSelection(true)" type="button" class="btn">Comentar</a>
+            <a href="javascript:commentSelection(false)" type="button" class="btn">Descomentar</a>
+        </p>
         <div class="editor">
             <div id="resizeMe" class="code a">
                 <div class="html-code"></div>

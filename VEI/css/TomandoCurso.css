@@ -33,4 +33,31 @@
         margin-top: 5px;
       }
 
- 
+.comentario {
+ border-bottom: 1px solid #9C9C9C;
+}
+.imagen {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.s-botones button i{
+  color: #ad1fff;
+  font-size:  1.3rem;
+}
+.s-botones button i:hover{
+  color: #44006b;
+}
+.form-check-label, .note ul a{
+  color: #ad1fff;
+}
+.form-check-label:hover{
+  color: #44006b;
+}
+.titulo{
+  text-align: center;
+  text-decoration: underline;
+  margin: 2rem 0;
+}
+.contenedor-btns a{
+  margin: 0.5rem;
+}
