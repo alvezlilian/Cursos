@@ -17,29 +17,20 @@
 <body>
 <header>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg"> <!--navbar-dark bg-dark-->
   <!-- Container wrapper -->
   <div class="container">
    <!-- Navbar brand -->
-   <a class="navbar-brand" href="#"><img id="MDB-logo"
-    src="img/curso-por-internet.png" alt="MDB Logo"
-    draggable="false" height="50px" /></a>
-
-    <!-- Toggle button -->
-    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-      data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
-
+   <a class="navbar-brand" href="#"><img id="MDB-logo" src="img/isotipo.png"/>ACTEC</a>
     
-      <form class="d-flex align-items-center w-100 form-search">
+      <form class="d-flex align-items-center w-50 form-search">
         <div class="input-group">
-          <button class="btn btn-light dropdown-toggle shadow-0" type="button" data-mdb-toggle="dropdown"
-            aria-expanded="false" style="padding-bottom: 0.4rem;">
-            <span class="fa-li pe-2"><i class="fa-solid fa-filter"></i></span>
+          <button class="btn shadow-0 filtro" type="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            <span class="fa-li">
+              <i class="fa-solid fa-filter"></i>
+            </span>
           </button>
-          <ul class="dropdown-menu dropdown-menu-dark fa-ul">
+          <ul class="dropdown-menu fa-ul">
             <li>
               <a class="dropdown-item" href="#"><span class="fa-li pe-2"><i class="fas fa-search"></i></span>Todo</a>
             </li>
@@ -50,21 +41,19 @@
               <a class="dropdown-item" href="#"><span class="fa-li pe-2"><i class="fa-solid fa-book"></i></span>Contenidos</a>
             </li>
           </ul>
-          <input type="search" class="form-control" placeholder="Búsqueda" aria-label="Search" />
+          <input type="search" class="form-control w-50" placeholder="Buscar..." aria-label="Search" />
         </div>
-        <a href="#!" class="text-white"><i class="fas fa-search ps-3"></i></a>
+        <a href="#"><i class="fas fa-search ps-3"></i></a>
       </form>
 
       <ul class="navbar-nav ms-3">
        
         <li class="nav-item">
-          <a class="nav-link d-flex align-items-center me-3" href="#!">
-            <i ></i>  </a>
         </li>
         <li class="nav-item" >
           <a class="nav-link d-flex align-items-center me-3" href="#!">
-            <i class="fa-solid fa-right-to-bracket" style="color: #ffffff;font-size: 24px"></i> </a>
-
+            <i class="fa-solid fa-user"></i>
+          </a>
           </a>
         </li>
       </ul>
@@ -77,16 +66,18 @@
 
   <!-- Background image -->
   <div id="intro" class="bg-image shadow-1-strong" style="
-        background-image: url(https://cdn.pixabay.com/photo/2015/09/05/20/02/coding-924920_640.jpg);
-        height: 500px;
+        background-image: url(img/background-1.png);
+        height: 550px;
       ">
-    <div class="mask text-white" style="background-color: rgba(0, 0, 0, 0.6); margin-top: 0px">
-      <div class="container d-flex align-items-center justify-content-center text-center h-100">
+    <div class="mask text-white" style="background-color: rgba(0, 0, 0, 0.3); margin-top: 0px">
+      <div class="container d-flex align-items-center h-100">
         <div class="text-white">
-          <h1 class="mb-3">AcTec</h1>
-          <h4 class="mb-4 ">Queremos que más personas accedan a la programación de manera <span class="text-dec">ilimitada</span>.</h4>
-          <a class="btn btn-outline-light btn-lg mb-3 btn-registro" href="#!" role="button">Registrate gratis ahora
-            <!--<i class="fas fa-gem ms-1"></i>-->
+          <h2 class="mb-4 titulo">Queremos que más personas accedan a la programación de manera <span class="text-dec">ilimitada</span>.
+            Y desde<span class="text-dec"> cualquier lugar</span>.
+          </h2>
+  
+          <a class="btn btn-outline-light btn-lg mb-3 mt-3 btn-registro" href="#!" role="button">
+            Registrate gratis ahora
           </a>
         </div>
       </div>
@@ -118,7 +109,7 @@
                 <p class="card-text">
                    ¡Aprende HTML realizando los mejores sitios! Curso 100% práctico, paso a paso y sin conocimientos previos<br>
                 </p>
-                <a href="TomandoCurso.html" class="btn btn-primary">Iniciar</a>
+                <a href="TomandoCurso.html" class="btn btn-go">Iniciar</a>
               </div>
             </div>
           </div>
@@ -136,7 +127,7 @@
                 <p class="card-text">
                   Domina Angular 11 y crea aplicaciones web del mundo real con TypeScript, Firebase, Firestore, JWT. ¡Y más!
                 </p>
-                <a href="#!" class="btn btn-primary">Iniciar</a>
+                <a href="#!" class="btn btn-go">Iniciar</a>
               </div>
             </div>
           </div>
@@ -155,7 +146,7 @@
                 <p class="card-text">
                   Aprende con el mejor curso Java de cero con las mejores prácticas POO, Java EE 9, CDI, JPA, EJB, JSF y Web Services.
                 </p>
-                <a href="#!" class="btn btn-primary">Iniciar</a>
+                <a href="#!" class="btn btn-go">Iniciar</a>
               </div>
             </div>
           </div>
@@ -176,7 +167,7 @@
                 <p class="card-text">
                   Aprende Bases de Datos, Consultas, Funciones, Tablas y Permisos. Diseña y Programa una Base de Datos Relacional SQL.
                 </p>
-                <a href="#!" class="btn btn-primary">Iniciar</a>
+                <a href="#!" class="btn btn-go">Iniciar</a>
               </div>
             </div>
           </div>
@@ -194,7 +185,7 @@
                 <p class="card-text">
                   Conoce este poderoso motor del lado del servidor que está revolucionando la web, sin límites.<br>
                 </p>
-                <a href="#!" class="btn btn-primary">Iniciar</a>
+                <a href="#!" class="btn btn-go">Iniciar</a>
               </div>
             </div>
           </div>
@@ -212,7 +203,7 @@
                 <p class="card-text">
                   Conviértete en programador experto viendo desde lo básico hasta lo más avanzado de Python.
                 </p>
-                <a href="#!" class="btn btn-primary">Iniciar</a>
+                <a href="#!" class="btn btn-go">Iniciar</a>
               </div>
             </div>
           </div>
@@ -356,7 +347,7 @@
                 style="width: 60px; background-color: #7c4dff; height: 2px"
                 />
             <p><i class="fas fa-home mr-4"></i> Buenos Aires, AR</p>
-            <p><i class="fas fa-envelope mr-4"></i>  artec@email.com</p>
+            <p><i class="fas fa-envelope mr-4"></i>  actec@email.com</p>
             <p><i class="fas fa-phone mr-4"></i>  4445 5594</p>
           </div>
           <!-- Grid column -->
