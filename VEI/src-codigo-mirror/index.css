@@ -115,3 +115,18 @@ a.btn {
   background-color: white;
   color: darkorchid;
 }
+.filtro span i {
+  font-size: 1rem;
+  padding-top: 0.1rem;
+  color: #9C9C9C;
+}
+.filtro {
+padding: 0.5rem;
+}
+.fa-search, .fa-user {
+color:#7D57A2;
+}
+.fa-li {
+position: relative;
+left: 0;
+}

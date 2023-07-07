@@ -70,3 +70,18 @@
   .modal-body h5 span{
     border-bottom: 2px solid black;
   }
+  .filtro span i {
+    font-size: 1rem;
+    padding-top: 0.1rem;
+    color: #9C9C9C;
+}
+.filtro {
+  padding: 0.5rem;
+}
+.fa-search, .fa-user {
+  color:#7D57A2;
+}
+.fa-li {
+  position: relative;
+  left: 0;
+}

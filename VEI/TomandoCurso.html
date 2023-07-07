@@ -17,16 +17,120 @@
 
 <body>
   <header>
-    <div id="header"></div>
+       <!-- Navbar -->
+       <nav class="navbar navbar-expand-lg">
+        <!-- Container wrapper -->
+        <div class="container">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="home.html"><img id="MDB-logo" src="img/isotipo.png" style="width: 35px"/>ACTEC</a>
+          
+            <form class="d-flex align-items-center w-50 form-search">
+              <div class="input-group">
+                <button class="btn shadow-0 filtro" type="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                  <span class="fa-li">
+                    <i class="fa-solid fa-filter"></i>
+                  </span>
+                </button>
+                <ul class="dropdown-menu fa-ul">
+                  <li>
+                    <a class="dropdown-item" href="#"><span class="fa-li pe-2"><i class="fas fa-search"></i></span>Todo</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><span class="fa-li pe-2"><i class="fas fa-tv"></i></span>Cursos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"><span class="fa-li pe-2"><i class="fa-solid fa-book"></i></span>Contenidos</a>
+                  </li>
+                </ul>
+                <input type="search" class="form-control w-50" placeholder="Buscar..." aria-label="Search" />
+              </div>
+              <a href="#"><i class="fas fa-search ps-3"></i></a>
+            </form>
+  
+            <ul class="navbar-nav ms-3">
+            
+              <li class="nav-item">
+              </li>
+              <li class="nav-item" >
+                <a class="a-trigger" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+                  <i class="fa-solid fa-user" style="color: #7e2fb0;"></i></a>
+             
+              </li>
+            </ul>
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      <!-- Navbar -->
+        <!-- Modal -->
+    <div class="modal right fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+      <div class="modal-dialog modal-side modal-top-right ">
+        <div class="modal-content" style="width: 85%;margin: auto;">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <h5 class="modal-title text-center mb-3" id="exampleModalLabel">Iniciar sesión en <span>AcTec</span></h5>
+              <form>
+                  <!-- Email input -->
+                  <div class="form-outline">
+                    <input type="email" id="form3Example3" class="form-control" style="border-bottom: 1px #b23cfd8c solid" />
+                    <label class="form-label" for="form3Example3">Correo electrónico</label>
+                  </div>
+    <br><br>
+                  <!-- Password input -->
+                  <div class="form-outline">
+                    <input type="password" id="form3Example4" class="form-control" style="border-bottom: 1px #b23cfd8c solid" />
+                    <label class="form-label" for="form3Example4">Contraseña</label>
+                  </div>
     
-    <!-- Jumbotron -->
+                  <!-- Submit button -->
+                  <p class="mx-auto" style="width: 60%;">
+                      <button type="submit" class="btn btn-block mb-4 mt-4 btn-go" style="background-color: #7e2fb0; color: white;">  <!-- w-50 mx-auto-->
+                          Iniciar sesión
+                      </button>
+                  </p>
+                  <p class="text-center mt-3">
+                    <span>aun no tenés cuenta?</span>
+                    <!-- Button trigger modal -->
+                    <a class="a-trigger"  href="registro.html">
+                       Registrate
+                    </a>
+                </form>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <!-- Register buttons -->
+            <div class="text-center div-btn">
+              <p>Continuar con:</p>
+  
+              <button type="button" class="btn btn-link btn-floating ">
+                <i class="fab fa-facebook-f" style="color: #7e2fb0;"></i>
+              </button>
+  
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-google" style="color: #7e2fb0;"></i>
+              </button>
+  
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-twitter" style="color: #7e2fb0;"></i>
+              </button>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--fin del nav-->
+    
+  
+  </header>
+  <!--Main Navigation-->
+  <!-- Jumbotron -->
     <div id="intro">
       <h3 class="w-100 titulo">Aprende HTML desde 0  </h3>
     </div>
     <!-- Jumbotron -->
-  </header>
-  <!--Main Navigation-->
-
   <!--Main layout-->
   <main class="mt-4 mb-5">
     <div class="container">
@@ -272,7 +376,135 @@
   <!--Main layout-->
 
   <!--Footer-->
-  <div id="footer"></div>
+  <footer
+  class="text-center text-lg-start text-white"
+  style="background-color: #3d396ede;"
+  >
+<!-- Section: Social media -->
+<section
+     class="d-flex justify-content-between p-4"
+     style=" background-color: rgba(0, 0, 0, 0.1)"
+     >
+<!-- Left -->
+<div class="me-5">
+<!--<span>Comparte para que llegue a más personas:</span>-->
+</div>
+<!-- Left -->
+
+<!-- Right -->
+<div>
+Haz que llegue a más personas&nbsp;&nbsp;&nbsp;
+<a href="" class="text-white me-4">
+  <i class="fab fa-facebook-f"></i>
+</a>
+<a href="" class="text-white me-4">
+  <i class="fab fa-twitter"></i>
+</a>
+<a href="" class="text-white me-4">
+  <i class="fab fa-google"></i>
+</a>
+<a href="" class="text-white me-4">
+  <i class="fab fa-instagram"></i>
+</a>
+<a href="" class="text-white me-4">
+  <i class="fab fa-linkedin"></i>
+</a>
+<a href="" class="text-white me-4">
+  <i class="fab fa-github"></i>
+</a>
+</div>
+<!-- Right -->
+</section>
+<!-- Section: Social media -->
+
+<!-- Section: Links  -->
+<section class="">
+<div class="container text-center text-md-start mt-5">
+<!-- Grid row -->
+<div class="row mt-3">
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+    <!-- Content -->
+    <h6 class="text-uppercase fw-bold">AcTec</h6>
+    <hr
+        class="mb-4 mt-0 d-inline-block mx-auto"
+        style="width: 60px; background-color: #7c4dff; height: 2px"
+        />
+    <p>
+      Acercándote a la tecnología. Haciendo que la educación llegue.
+    </p>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold">Otros proyectos</h6>
+    <hr
+        class="mb-4 mt-0 d-inline-block mx-auto"
+        style="width: 60px; background-color: #7c4dff; height: 2px"
+        />
+    <p>
+      <a href="#!" class="text-white">CodeSpace</a>
+    </p>
+    <p>
+      <a href="#!" class="text-white">ABCTec</a>
+    </p>
+    <p>
+      <a href="#!" class="text-white">BrandFlow</a>
+    </p>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold">Enlaces útiles</h6>
+    <hr
+        class="mb-4 mt-0 d-inline-block mx-auto"
+        style="width: 60px; background-color: #7c4dff; height: 2px"
+        />
+    <p>
+      <a href="#!" class="text-white">Perfil</a>
+    </p>
+    <p>
+      <a href="#!" class="text-white">Ayuda</a>
+    </p>
+    <p>
+      <a href="#!" class="text-white">Contribuir</a>
+    </p>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold">Contacto</h6>
+    <hr
+        class="mb-4 mt-0 d-inline-block mx-auto"
+        style="width: 60px; background-color: #7c4dff; height: 2px"
+        />
+    <p><i class="fas fa-home mr-4"></i> Buenos Aires, AR</p>
+    <p><i class="fas fa-envelope mr-4"></i>  actec@email.com</p>
+    <p><i class="fas fa-phone mr-4"></i>  4445 5594</p>
+  </div>
+  <!-- Grid column -->
+</div>
+<!-- Grid row -->
+</div>
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div
+ class="text-center p-3"
+ style="background-color: rgba(0, 0, 0, 0.2)"
+ >
+© 2023 Copyright - AcTec
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
   <!-- Footer -->
 
    <!-- MDB -->
@@ -280,16 +512,6 @@
    <!-- Custom scripts -->
    <script type="text/javascript" src="js/script.js"></script>
 
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-    </script>
-    <script> 
-    $(function(){
-      $("#header").load("header.html"); 
-      $("#footer").load("footer.html"); 
-    });
-  </script> 
+ 
 </body>
 </html>
