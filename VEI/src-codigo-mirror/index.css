@@ -91,7 +91,7 @@ a:hover{
     height: 100%;
     border: none;
     outline: none;
-    background: rgb(214, 210, 210);
+    background: rgb(255, 255, 255);
   
     
 }
@@ -106,4 +106,12 @@ a:hover{
 .menu a {
     margin: 10px
 }
-
+a#run-btn {
+  color: beige;
+  background-color: #00b74a;
+}
+a.btn {
+  z-index: 1;
+  background-color: white;
+  color: darkorchid;
+}

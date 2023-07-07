@@ -16,27 +16,27 @@
      <!-- MDB -->
      <link rel="stylesheet" href="css/mdb.min.css" />
      <!-- Custom styles -->
-     <link rel="stylesheet" href="css/TomandoCurso.css" />
       <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/isotipo.png">
 </head>
 
-<body>
+<body >
     <header>
       <div id="header"></div>
     </header>
-    <main class="mb-5">
+    <main  style="background-image: url(img/background1.png);">
+        <div>
         <div id="intro" class="p-3 text-center">
-            <h3 class="w-100 ">Editor de código en línea</h3>
-            <p>Practicá los ejercicios y ejecutalos de manera sencilla</p>
+            <h3 class="w-100 " style="color: white;">Editor de código en línea</h3>
+            <p style="color: white;">Practicá los ejercicios y ejecutalos de manera sencilla</p>
           </div>
         <p class="w-100 text-center contenedor-btns">
-            <a  id="run-btn" type="button" class="btn btn-success">Ejecutar</a>
+            <a  id="run-btn" type="button" class="btn btn-success" style="color: white;">Ejecutar</a>
             <a href="javascript:autoFormatSelection()" type="button" class="btn">Dar formato</a>
             <a href="javascript:commentSelection(true)" type="button" class="btn">Comentar</a>
             <a href="javascript:commentSelection(false)" type="button" class="btn">Descomentar</a>
         </p>
-        <div class="editor">
+        <div class="editor" style="background-color: rgba(202, 202, 202, 0.496);">
             <div id="resizeMe" class="code a">
                 <div class="html-code"></div>
             </div>
@@ -110,3 +110,4 @@
   });
   </script> 
 </body>
+</html>

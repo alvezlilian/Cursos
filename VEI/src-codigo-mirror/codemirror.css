@@ -134,6 +134,7 @@
   .cm-s-default .cm-attribute {color: #00c;}
   .cm-s-default .cm-hr {color: #999;}
   .cm-s-default .cm-link {color: #00c;}
+  .cm-s-default .cm-property {color: crimson;}
   
   .cm-s-default .cm-error {color: #f00;}
   .cm-invalidchar {color: #f00;}
@@ -253,6 +254,7 @@
     -webkit-tap-highlight-color: transparent;
     -webkit-font-variant-ligatures: contextual;
     font-variant-ligatures: contextual;
+    color: black;
   }
   .CodeMirror-wrap pre.CodeMirror-line,
   .CodeMirror-wrap pre.CodeMirror-line-like {
@@ -285,7 +287,7 @@
   .CodeMirror-gutter,
   .CodeMirror-gutters,
   .CodeMirror-linenumber {
-    background: rgb(36, 34, 34);
+    background: rgb(255, 255, 255);
     -moz-box-sizing: content-box;
     box-sizing: content-box;
   }

@@ -41,17 +41,19 @@
   margin-bottom: 1rem;
 }
 .s-botones button i{
-  color: #ad1fff;
+  color: #7e2fb0;
   font-size:  1.3rem;
 }
 .s-botones button i:hover{
-  color: #44006b;
+  color: #7e2fb0;
 }
-.form-check-label, .note ul a{
-  color: #ad1fff;
-}
+
 .form-check-label:hover{
-  color: #44006b;
+  color: #7e2fb0;
+}
+.note ul a:hover{
+  color: #7e2fb0;
+
 }
 .titulo{
   text-align: center;
