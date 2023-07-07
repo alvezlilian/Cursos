@@ -68,5 +68,5 @@
     margin: 2.2rem 0;
   }
   .modal-body h5 span{
-    text-decoration: underline;
+    border-bottom: 2px solid black;
   }
